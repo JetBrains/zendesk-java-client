@@ -32,6 +32,7 @@ public class Ticket extends Request implements SearchResultEntity {
     private List<CustomFieldValue> customFields;
     private SatisfactionRating satisfactionRating;
     private List<Long> sharingAgreementIds;
+    private Long viaFollowupSourceId;
     private List<Long> followupIds;
     private Long ticketFormId;
     private Long brandId;
@@ -103,6 +104,15 @@ public class Ticket extends Request implements SearchResultEntity {
 
     public void setExternalId(String externalId) {
         this.externalId = externalId;
+    }
+
+    @JsonProperty("via_followup_source_id")
+    public Long getViaFollowupSourceId() {
+        return viaFollowupSourceId;
+    }
+
+    public void setViaFollowupSourceId(Long viaFollowupSourceId) {
+        this.viaFollowupSourceId = viaFollowupSourceId;
     }
 
     @JsonProperty("followup_ids")
