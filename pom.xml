@@ -43,7 +43,7 @@
     <repository>
       <id>repo.labs.intellij.net</id>
       <name>repo.labs.intellij.net-releases</name>
-      <url>http://repo.labs.intellij.net/webteam</url>
+      <url>https://repo.labs.intellij.net/webteam</url>
     </repository>
   </distributionManagement>
 
